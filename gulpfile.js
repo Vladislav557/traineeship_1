@@ -7,9 +7,13 @@ const htmlmin = require('gulp-htmlmin');
 const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 const jsmin = require('gulp-minify');
+const babel = require('gulp-babel');
 
 const buildJs = () => {
     return src('src/scripts/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(jsmin())
         .pipe(dest('build/scripts'))
 };
@@ -48,5 +52,5 @@ const browserSyncJob = () => {
 };
 
 
-exports.build = series(clear, buildSass, buildHtml);
+exports.build = series(clear, buildSass, buildHtml, buildJs);
 exports.server = series(clear, buildSass, buildJs, buildHtml, browserSyncJob);
