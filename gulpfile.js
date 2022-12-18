@@ -39,6 +39,11 @@ const buildSass = () => {
         .pipe(dest('build/styles/'));
 };
 
+const buildAssets = () => {
+    return src('src/assets/**')
+        .pipe(dest('build/assets'))
+}
+
 const clear = () => del('build');
 
 const browserSyncJob = () => {
@@ -52,5 +57,5 @@ const browserSyncJob = () => {
 };
 
 
-exports.build = series(clear, buildSass, buildHtml, buildJs);
-exports.server = series(clear, buildSass, buildJs, buildHtml, browserSyncJob);
+exports.build = series(clear, buildSass, buildHtml, buildJs, buildAssets);
+exports.server = series(clear, buildSass, buildJs, buildHtml, buildAssets, browserSyncJob);
