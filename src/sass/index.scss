@@ -1,6 +1,5 @@
-h1 {
-  position: relative;
-  top: 10px;
-  display: flex;
-  color: red;
+@import "./fonts";
+
+body {
+  font-family: Inter, sans-serif;
 }
