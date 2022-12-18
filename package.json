@@ -21,6 +21,7 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.57.0",
     "stylelint": "^14.16.0",
+    "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard-scss": "^6.1.0",
     "surge": "^0.23.1"
   },
