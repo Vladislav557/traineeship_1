@@ -4,7 +4,9 @@
   "description": "Первое задание в рамаках стажировки на позицию верстальщика",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npx gulp server",
+    "build": "npx gulp build",
+    "lint": "npx stylelint src/sass/*.scss"
   },
   "author": "Vladislav Kiselev",
   "license": "ISC",
@@ -18,6 +20,8 @@
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.57.0",
+    "stylelint": "^14.16.0",
+    "stylelint-config-standard-scss": "^6.1.0",
     "surge": "^0.23.1"
   },
   "dependencies": {
