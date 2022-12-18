@@ -1,0 +1,118 @@
+@mixin headline-1 {
+  font-weight: 600;
+  font-size: 54px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+
+  @media (max-width: 480px) {
+    font-size: 44px;
+  }
+}
+
+@mixin headline-2 {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+
+  @media (max-width: 480px) {
+    font-weight: 500;
+    font-size: 34px;
+  }
+}
+
+@mixin headline-3 {
+  font-weight: 600;
+  font-size: 32px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+
+  @media (max-width: 480px) {
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
+@mixin headline-4 {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+}
+
+@mixin headline-5 {
+  font-weight: 600;
+  font-size: 17px;
+  font-family: Inter, sans-serif;
+  line-height: 130%;
+}
+
+@mixin numbers {
+  font-weight: 600;
+  font-size: 28px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+}
+
+@mixin text {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 150%;
+}
+
+@mixin menu-text {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+}
+
+@mixin menu-text-small {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 150%;
+}
+
+@mixin text-request {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Nunito, sans-serif;
+  line-height: 140%;
+}
+
+@mixin text-button {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: 130%;
+}
+
+@mixin text-button-small {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  line-height: 130%;
+}
+
+@mixin text-request-footer {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: Nunito, sans-serif;
+  line-height: 140%;
+}
+
+@mixin text-header {
+  font-weight: 500;
+  font-size:180px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+}
+
+@mixin text-list {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  line-height: 140%;
+}
